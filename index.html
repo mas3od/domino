@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Domino Game </title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<script  type='module' src="main.js" defer></script>
+
+<body>
+<div class='mybuttons'>
+<a href='#' id='restart'>Restart</a>
+<a  href='#' id='sett'>Settings</a>
+</div>
+    <div class="container">
+
+        <div class="players" id='up'>
+            <div class="tiles"></div>
+        </div>
+        <div class="players" id='left'>
+            <div class="tiles"></div>
+        </div>
+        <div id="canvas">
+            <canvas>
+                
+            </canvas>
+        </div>
+        <div class="players" id="right">
+            <div class="tiles"></div>
+        </div>
+        <div class="players" id='down'>
+            <div class="tiles"></div>
+        </div>
+        
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="setting">
+        
+        <fieldset id='gameType' for="game"> Game type: <br>
+            <label for="game"> 2 vs 2 <input checked type="radio" name="game" class="gameType" id="2vs2" value="2vs2"> </label>
+            <label for="game"> 1 vs 1 <input  type="radio" name="game" id="1vs1" class="gameType" value="1vs1"></label>
+            
+        </fieldset>
+        <label for="maxScore"> Max Score: 
+            <input type="text" name="maxScore" id="maxScore" value="100">
+        </label>
+        <label  for="time">
+            Waiting time(in seconds): 
+            <input type="text" name="time" id="time" value="30">
+        </label>
+        
+
+        <div class="buttons">
+            <button type="submit" id ='SaveSetting'> Save</button> <button id ='cancelSetting'>Cancel </button>
+        </div>
+        
+
+    </div>
+    <div class="results">
+        <div class="result">
+            <span>Player: right </span> 
+            <div class="hand" id='resultright' ></div>
+            
+        </div>
+        <div class="result">
+            <span>Player: down </span> 
+            <div class="hand" id = 'resultdown'></div>
+            
+        </div >
+        <div  class="result">
+            <span>Player: left </span> 
+            <div class="hand" id="resultleft" ></div>
+            
+        </div>
+        <div  class="result">
+            <span>Player: top </span> 
+            <div class="hand" id='resultup' ></div>
+            
+        </div>
+<div class="buttons">
+    <button type="submit" id='continue'>OK</button>
+</div>        
+
+
+
+</body>
+</html>
